@@ -16,6 +16,7 @@ fn main() {
         // To make code analysis on Mac OS work
         .clang_arg("-I./linux_headers")
         .clang_arg("-I/Users/chenqian/Library/Android/sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include")
+        .clang_arg("-I/Users/chenqian/Library/Android/sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/arm-linux-androideabi")
         // The input header we would like to generate
         // bindings for.
         .header("wrapper.h")
